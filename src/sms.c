@@ -20,7 +20,7 @@ void handle_sms(API_Event_t *event)
     uint8_t *header = event->pParam1;
     uint8_t *content = event->pParam2;
     uint8_t sms_type = content[0] - 32;
-    Trace(1, "sms headerrrrrrrrrrr: %s", header);
+    Trace(1, "sms header: %s", header);
     Trace(1, "sms content: %s", content);
     Trace(1, "sms type: %d", sms_type);
     switch (sms_type)
